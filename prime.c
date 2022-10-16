@@ -2,6 +2,8 @@
 #include <stdint.h>
 #include <string.h>
 
+#define MAX_SIZE 100 // constant for maximum number of elements in array
+
 // in this challenge you are going to create a program that will find all the prime numbers from 3 - 100
 // there will be no input to the program
 
@@ -13,10 +15,10 @@ void printArray(uint8_t* array);
 
 int main(void)
 {
-    uint8_t prime_nums[100] = {2, 3};
+    uint8_t prime_nums[MAX_SIZE] = {2, 3};
     uint8_t n = 2;
 
-    for(int i = 3; i < 100; i+=2) // after 2 all the rest of the numbers are odd for prime. 
+    for(int i = 5; i < MAX_SIZE; i+=2) // after 2 all the rest of the numbers are odd for prime. 
     {
         if (n % i == 0) // if n is divisible by i then it is not prime
         {
@@ -31,7 +33,7 @@ int main(void)
 }
 
 void printArray(uint8_t* array){
-    for (int i = 3; i < 100; i++)
+    for (int i = 3; i < MAX_SIZE; i++)
     {
         if(array[i] != 0)
             printf("%d ", array[i]);
