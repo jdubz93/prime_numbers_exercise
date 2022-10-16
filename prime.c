@@ -25,9 +25,7 @@ int main(void)
         }
     }
 
-
     printArray(prime_nums);
-
     return 0;
 }
 
