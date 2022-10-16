@@ -18,8 +18,9 @@ int main(void)
 
     for(int i = 3; i < 100; i+=2) // after 2 all the rest of the numbers are odd for prime. 
     {
-        if (n % i == 0) {
-            // not prime
+        if (n % i == 0) // if n is divisible by i then it is not prime
+        {
+            // do nothing
         } else {
             prime_nums[i] = i;
         }
