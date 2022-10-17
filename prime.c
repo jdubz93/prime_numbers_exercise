@@ -21,7 +21,7 @@ int main(void)
     uint8_t prime_nums[MAX_PRIME] = {2, 3};
     uint8_t n = 2;
     bool isPrime = {false};
-    uint8_t prime_idx = 0;
+    uint8_t prime_idx = 3;
 
     for(int i = 5; i < MAX_SIZE; i+=2) // after 2 all the rest of the numbers are odd for prime. 
     {
@@ -43,7 +43,7 @@ int main(void)
 }
 
 void printArray(uint8_t* array){
-    for (int i = 3; i < MAX_PRIME; i++)
+    for (int i = 0; i < MAX_PRIME; i++)
     {
         if(array[i] != 0)
             printf("%d ", array[i]);
